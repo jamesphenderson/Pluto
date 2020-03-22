@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {createStackNavigator} from '@react-navigation/stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
@@ -60,7 +61,25 @@ const SettingsStackScreen = () => {
 const AppStack = createBottomTabNavigator();
 export const AppStackScreens = () => {
   return (
-    <AppStack.Navigator>
+    <AppStack.Navigator
+      screenOptions={({route}) => ({
+        tabBarIcon: ({focused, color, size}) => {
+          let iconName;
+
+          if (route.name === 'Home') {
+            iconName = focused ? 'home' : 'home';
+          } else if (route.name === 'Settings') {
+            iconName = focused ? 'account-settings' : 'account-settings';
+          }
+
+          // You can return any component that you like here!
+          return <Icon name={iconName} size={size} color={color} />;
+        },
+      })}
+      tabBarOptions={{
+        activeTintColor: 'tomato',
+        inactiveTintColor: 'gray',
+      }}>
       <AppStack.Screen name="Home" component={HomeStackScreen} />
       <AppStack.Screen name="Settings" component={SettingsStackScreen} />
     </AppStack.Navigator>

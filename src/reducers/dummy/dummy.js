@@ -1,3 +1,3 @@
-export const dummyReducer = (state = "Dummy", action) => {
-    return state
-}
+export const dummyReducer = (state = 'Dummy', action) => {
+  return state;
+};

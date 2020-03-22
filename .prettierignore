@@ -1,0 +1,8 @@
+/android
+/assets
+/ios
+/node_modules
+*.config.js
+*.json
+*eslint*
+*prettier*

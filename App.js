@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
-import {AuthStackScreens, AppStackScreens} from "./src/navigation"
+import {AuthStackScreens, AppStackScreens} from './src/navigation';
 
 export default function App() {
   const isAuthenticated = true;

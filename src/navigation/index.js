@@ -1,5 +1,3 @@
-import {AuthStackScreens, AppStackScreens} from "./main"
+import {AuthStackScreens, AppStackScreens} from './main';
 
-export {
-    AuthStackScreens, AppStackScreens
-}
+export {AuthStackScreens, AppStackScreens};

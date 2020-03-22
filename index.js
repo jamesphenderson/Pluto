@@ -9,7 +9,7 @@ import {store} from './src/store';
 const ReduxWrapper = () => {
   return (
     <Provider store={store}>
-        <App />
+      <App />
     </Provider>
   );
 };

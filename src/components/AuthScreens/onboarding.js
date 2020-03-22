@@ -5,7 +5,7 @@ const Onboarding = ({navigation}) => {
   return (
     <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
       <Text>App Intro</Text>
-      <Button title="Login" onPress={() => navigation.navigate('Login')}/>
+      <Button title="Login" onPress={() => navigation.navigate('Login')} />
     </View>
   );
 };

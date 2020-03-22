@@ -1,34 +1,42 @@
 export const slides = [
-    {
-      key: 'intro',
-      title: 'Intro',
-      text: 'Precursor.\nSome cool starter text',
-      image: require('./../../../assets/img/music.png'),
-      backgroundColor: '#59b2ab',
-      imageStyle: {width: 400, height: 400, resizeMode: 'contain'}
-    },
-    {
-      key: 'purpose',
-      title: 'Purpose',
-      text: 'Elaborate\nShare what your app does',
-      image: require('./../../../assets/img/music.png'),
-      backgroundColor: '#febe29',
-      imageStyle: {width: 400, height: 400, resizeMode: 'contain'}
-    },
-    {
-        key: 'permissions',
-        title: 'Permissions',
-        text: 'Grants\nRequest for access to sys',
-        image: require('./../../../assets/img/music.png'),
-        backgroundColor: '#febe29',
-        imageStyle: {width: 400, height: 400, resizeMode: 'contain'}
-      },
-    {
-      key: 'finish',
-      title: 'Finish',
-      text: "Prologue\nEnd with a bang",
-      image: require('./../../../assets/img/music.png'),
-      backgroundColor: '#22bcb5',
-      imageStyle: {width: 400, height: 400, resizeMode: 'contain'}
-    }
-  ];
+  {
+    key: 'intro',
+    title: 'Intro',
+    titleStyle: {color: "#000"},
+    text: 'Precursor.\nSome cool starter text',
+    textStyle: {color: "#000", fontSize: 18},
+    image: require('./../../../assets/img/music.png'),
+    backgroundColor: '#dcffcc',
+    imageStyle: {width: 400, height: 400, resizeMode: 'contain'},
+  },
+  {
+    key: 'purpose',
+    title: 'Purpose',
+    titleStyle: {color: "#000"},
+    text: 'Elaborate\nShare what your app does',
+    textStyle: {color: "#000", fontSize: 18},
+    image: require('./../../../assets/img/music.png'),
+    backgroundColor: '#deff8b',
+    imageStyle: {width: 400, height: 400, resizeMode: 'contain'},
+  },
+  {
+    key: 'permissions',
+    title: 'Permissions',
+    titleStyle: {color: "#000"},
+    text: 'Grants\nRequest for access to sys',
+    textStyle: {color: "#000", fontSize: 18},
+    image: require('./../../../assets/img/music.png'),
+    backgroundColor: '#eef9bf',
+    imageStyle: {width: 400, height: 400, resizeMode: 'contain'},
+  },
+  {
+    key: 'finish',
+    title: 'Finish',
+    titleStyle: {color: "#000"},
+    text: 'Prologue\nEnd with a bang',
+    textStyle: {color: "#000", fontSize: 18},
+    image: require('./../../../assets/img/music.png'),
+    backgroundColor: '#ffeadb',
+    imageStyle: {width: 400, height: 400, resizeMode: 'contain'},
+  },
+];

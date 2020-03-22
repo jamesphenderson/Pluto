@@ -9,7 +9,7 @@ const IntroSlider = ({navigation}) => {
       <AppIntroSlider
         slides={slides}
         bottomButton={true}
-        buttonStyle={{backgroundColor: "#444"}}
+        buttonStyle={{backgroundColor: '#444'}}
         doneLabel={'Complete'}
         onDone={() => navigation.navigate('Login')}
       />

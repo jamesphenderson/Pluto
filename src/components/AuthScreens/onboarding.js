@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {View, Text} from 'react-native';
+import {View} from 'react-native';
 import AppIntroSlider from 'react-native-app-intro-slider';
 import {slides} from './../../utils/onboarding/slides';
 
@@ -19,7 +19,6 @@ const IntroSlider = ({navigation}) => {
         onSlideChange={index => updateCurrentSlideIndex(index)}
         onDone={() => navigation.navigate('Login')}
       />
-      <Text>Slide {currentSlideIndex}</Text>
     </View>
   );
 };

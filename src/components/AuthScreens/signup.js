@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet} from 'react-native';
+import {StyleSheet, View, Image} from 'react-native';
 import {useDispatch} from 'react-redux';
 import {
   Container,
@@ -23,6 +23,12 @@ const Signup = ({navigation}) => {
   return (
     <Container style={styles.container}>
       <Content>
+        <View style={styles.imageContainer}>
+          <Image
+            source={require('./../../../assets/img/music.png')}
+            style={styles.image}
+          />
+        </View>
         <Item style={styles.item} regular>
           <Icon active name="ios-person" />
           <Input placeholder="Full Name" />
@@ -71,11 +77,22 @@ const styles = StyleSheet.create({
   container: {
     padding: wdp('5%'),
   },
+  imageContainer: {
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  image: {
+    width: 150,
+    height: 150,
+  },
   item: {
     marginBottom: 15,
   },
   button: {
+    marginBottom: 5
+  },
+  checkbox: {
+    marginTop: 5,
     marginBottom: 5,
   },
-  checkbox: {},
 });

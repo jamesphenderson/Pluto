@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
@@ -12,7 +13,7 @@ import {
 import {Home, Settings} from './../screens/AppScreens';
 
 const AuthStack = createStackNavigator();
-export const AuthStackScreens = () => {
+const AuthStackScreens = () => {
   return (
     <AuthStack.Navigator initialRouteName="Onboarding">
       <AuthStack.Screen
@@ -59,7 +60,7 @@ const SettingsStackScreen = () => {
 };
 
 const AppStack = createBottomTabNavigator();
-export const AppStackScreens = () => {
+const AppStackScreens = () => {
   return (
     <AppStack.Navigator
       screenOptions={({route}) => ({
@@ -71,8 +72,6 @@ export const AppStackScreens = () => {
           } else if (route.name === 'Settings') {
             iconName = focused ? 'account-settings' : 'account-settings';
           }
-
-          // You can return any component that you like here!
           return <Icon name={iconName} size={size} color={color} />;
         },
       })}
@@ -83,5 +82,13 @@ export const AppStackScreens = () => {
       <AppStack.Screen name="Home" component={HomeStackScreen} />
       <AppStack.Screen name="Settings" component={SettingsStackScreen} />
     </AppStack.Navigator>
+  );
+};
+
+export const MainAppNavigation = isAuthenticated => {
+  return (
+    <NavigationContainer>
+      {isAuthenticated ? AppStackScreens() : AuthStackScreens()}
+    </NavigationContainer>
   );
 };

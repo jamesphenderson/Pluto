@@ -1,3 +1,3 @@
-import {AuthStackScreens, AppStackScreens} from './main';
+import {MainAppNavigation} from './main';
 
-export {AuthStackScreens, AppStackScreens};
+export {MainAppNavigation};

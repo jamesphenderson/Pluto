@@ -44,7 +44,7 @@ const HomeStackScreen = () => {
   return (
     <HomeStack.Navigator>
       <HomeStack.Screen name="Home" component={Home} />
-      {/* Add more to stack screens */}
+      {/* Add more to stack screens within Home */}
     </HomeStack.Navigator>
   );
 };

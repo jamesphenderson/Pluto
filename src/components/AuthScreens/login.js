@@ -1,17 +1,23 @@
 import React from 'react';
-import {StyleSheet} from 'react-native';
+import {StyleSheet, View, Image} from 'react-native';
 import {useDispatch} from 'react-redux';
 import {Container, Text, Button, Content, Item, Input, Icon} from 'native-base';
 import {widthPercentageToDP as wdp} from 'react-native-responsive-screen';
 
 //actions
-import {toggleAuth} from './../../actions/auth/login';
+import {toggleAuth} from './../../actions/auth';
 
 const Login = ({navigation}) => {
   const dispatch = useDispatch();
   return (
     <Container style={styles.container}>
       <Content>
+        <View style={styles.imageContainer}>
+          <Image
+            source={require('./../../../assets/img/music.png')}
+            style={styles.image}
+          />
+        </View>
         <Item style={styles.item} regular>
           <Icon active name="ios-mail" />
           <Input placeholder="Email Address" />
@@ -27,7 +33,7 @@ const Login = ({navigation}) => {
             //TODO - log in user, then dispatch action
             dispatch(toggleAuth(true));
           }}>
-          <Text>Login</Text>
+          <Text>Sign In</Text>
         </Button>
         <Button
           style={styles.button}
@@ -45,6 +51,14 @@ export default Login;
 const styles = StyleSheet.create({
   container: {
     padding: wdp('5%'),
+  },
+  imageContainer: {
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  image: {
+    width: 250,
+    height: 250,
   },
   item: {
     marginBottom: 15,

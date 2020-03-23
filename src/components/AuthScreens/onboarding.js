@@ -4,7 +4,7 @@ import AppIntroSlider from 'react-native-app-intro-slider';
 import {slides} from './../../utils/onboarding/slides';
 
 // utils
-import {requestCameraPermissions} from './../../utils/permissions';
+// import {requestCameraPermissions} from './../../utils/permissions';
 
 const IntroSlider = ({navigation}) => {
   const [currentSlideIndex, updateCurrentSlideIndex] = useState(0);

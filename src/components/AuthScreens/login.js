@@ -1,9 +1,14 @@
 import React from 'react';
 import {StyleSheet} from 'react-native';
+import {useDispatch} from 'react-redux';
 import {Container, Text, Button, Content, Item, Input, Icon} from 'native-base';
 import {widthPercentageToDP as wdp} from 'react-native-responsive-screen';
 
+//actions
+import {toggleAuth} from './../../actions/auth/login';
+
 const Login = ({navigation}) => {
+  const dispatch = useDispatch();
   return (
     <Container style={styles.container}>
       <Content>
@@ -18,7 +23,10 @@ const Login = ({navigation}) => {
         <Button
           style={styles.button}
           block
-          onPress={() => navigation.navigate('Home')}>
+          onPress={() => {
+            //TODO - log in user, then dispatch action
+            dispatch(toggleAuth(true));
+          }}>
           <Text>Login</Text>
         </Button>
         <Button

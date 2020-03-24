@@ -4,6 +4,9 @@ import {useDispatch} from 'react-redux';
 import {Container, Text, Button, Content, Item, Input, Icon} from 'native-base';
 import {widthPercentageToDP as wdp} from 'react-native-responsive-screen';
 
+//color styles
+import {LightTheme} from "./../../styles"
+
 //actions
 import {toggleAuth} from './../../actions/auth';
 
@@ -50,7 +53,7 @@ export default Login;
 
 const styles = StyleSheet.create({
   container: {
-    padding: wdp('5%'),
+    padding: wdp('5%')
   },
   imageContainer: {
     justifyContent: 'center',
@@ -64,6 +67,6 @@ const styles = StyleSheet.create({
     marginBottom: 15,
   },
   button: {
-    marginBottom: 5,
+    marginBottom: 5
   },
 });

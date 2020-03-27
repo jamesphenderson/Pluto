@@ -1,3 +1,3 @@
-import {AppStyles as LightAppStyles} from "./main"
+import {AppStyles as LightAppStyles} from './main';
 
-export {LightAppStyles}
+export {LightAppStyles};

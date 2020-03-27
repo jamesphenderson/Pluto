@@ -4,7 +4,7 @@ import AppIntroSlider from 'react-native-app-intro-slider';
 import {slides} from './../../utils/onboarding/slides';
 
 //color styles
-import {LightTheme} from "./../../styles"
+import {LightTheme} from './../../styles';
 
 // utils
 // import {requestCameraPermissions} from './../../utils/permissions';

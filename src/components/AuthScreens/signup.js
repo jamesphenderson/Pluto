@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
     marginBottom: 15,
   },
   button: {
-    marginBottom: 5
+    marginBottom: 5,
   },
   checkbox: {
     marginTop: 5,

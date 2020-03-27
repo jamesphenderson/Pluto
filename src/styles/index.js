@@ -1,5 +1,3 @@
-import {LightAppStyles as LightTheme} from "./light"
+import {LightAppStyles as LightTheme} from './light';
 
-export {
-    LightTheme
-}
+export {LightTheme};

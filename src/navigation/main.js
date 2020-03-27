@@ -4,6 +4,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
+//screens
 import {
   Onboarding,
   Login,
@@ -11,6 +12,9 @@ import {
   ForgotPassword,
 } from './../screens/AuthScreens';
 import {Home, Settings} from './../screens/AppScreens';
+
+//preconfigured tabs
+import {HomeHeaderOptions} from './options';
 
 const AuthStack = createStackNavigator();
 const AuthStackScreens = () => {
@@ -44,7 +48,11 @@ const HomeStack = createStackNavigator();
 const HomeStackScreen = () => {
   return (
     <HomeStack.Navigator>
-      <HomeStack.Screen name="Home" component={Home} />
+      <HomeStack.Screen
+        name="Home"
+        component={Home}
+        options={HomeHeaderOptions}
+      />
       {/* Add more to stack screens within Home */}
     </HomeStack.Navigator>
   );
@@ -68,9 +76,9 @@ const AppStackScreens = () => {
           let iconName;
 
           if (route.name === 'Home') {
-            iconName = focused ? 'home' : 'home';
+            iconName = focused ? 'fire' : 'fire';
           } else if (route.name === 'Settings') {
-            iconName = focused ? 'account-settings' : 'account-settings';
+            iconName = focused ? 'face' : 'face';
           }
           return <Icon name={iconName} size={size} color={color} />;
         },

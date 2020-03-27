@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
@@ -14,7 +13,11 @@ import {
 import {Home, Settings} from './../screens/AppScreens';
 
 //preconfigured tabs
-import {HomeHeaderOptions} from './options';
+import {
+  HomeHeaderOptions,
+  BottomTabScreenOptions,
+  BottomTabTabOptions,
+} from './options';
 
 const AuthStack = createStackNavigator();
 const AuthStackScreens = () => {
@@ -71,22 +74,8 @@ const AppStack = createBottomTabNavigator();
 const AppStackScreens = () => {
   return (
     <AppStack.Navigator
-      screenOptions={({route}) => ({
-        tabBarIcon: ({focused, color, size}) => {
-          let iconName;
-
-          if (route.name === 'Home') {
-            iconName = focused ? 'fire' : 'fire';
-          } else if (route.name === 'Settings') {
-            iconName = focused ? 'face' : 'face';
-          }
-          return <Icon name={iconName} size={size} color={color} />;
-        },
-      })}
-      tabBarOptions={{
-        activeTintColor: 'tomato',
-        inactiveTintColor: 'gray',
-      }}>
+      screenOptions={BottomTabScreenOptions}
+      tabBarOptions={BottomTabTabOptions}>
       <AppStack.Screen name="Home" component={HomeStackScreen} />
       <AppStack.Screen name="Settings" component={SettingsStackScreen} />
     </AppStack.Navigator>

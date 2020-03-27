@@ -1,7 +1,7 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, StyleSheet, Text} from 'react-native';
 
-const Profile = ({navigation}) => {
+const Search = ({navigation}) => {
   return (
     <View
       style={{
@@ -10,9 +10,9 @@ const Profile = ({navigation}) => {
         alignItems: 'center',
         backgroundColor: '#fff',
       }}>
-      <Text>Profile</Text>
+      <Text>Search</Text>
     </View>
   );
 };
 
-export default Profile;
+export default Search;

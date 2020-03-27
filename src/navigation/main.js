@@ -10,7 +10,7 @@ import {
   Signup,
   ForgotPassword,
 } from './../screens/AuthScreens';
-import {Home, Profile} from './../screens/AppScreens';
+import {Home, Search, Profile} from './../screens/AppScreens';
 
 //preconfigured tabs
 import {
@@ -18,6 +18,7 @@ import {
   BottomTabScreenOptions,
   BottomTabTabOptions,
 } from './options';
+import {create} from 'react-test-renderer';
 
 const AuthStack = createStackNavigator();
 const AuthStackScreens = () => {
@@ -61,6 +62,15 @@ const HomeStackScreen = () => {
   );
 };
 
+const SearchStack = createStackNavigator();
+const SearchStackScreen = () => {
+  return (
+    <SearchStack.Navigator>
+      <SearchStack.Screen name="Search" component={Search} />
+    </SearchStack.Navigator>
+  );
+};
+
 const ProfileStack = createStackNavigator();
 const ProfileStackScreen = () => {
   return (
@@ -77,6 +87,7 @@ const AppStackScreens = () => {
       screenOptions={BottomTabScreenOptions}
       tabBarOptions={BottomTabTabOptions}>
       <AppStack.Screen name="Home" component={HomeStackScreen} />
+      <AppStack.Screen name="Search" component={SearchStackScreen} />
       <AppStack.Screen name="Profile" component={ProfileStackScreen} />
     </AppStack.Navigator>
   );

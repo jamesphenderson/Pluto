@@ -10,7 +10,7 @@ import {
   Signup,
   ForgotPassword,
 } from './../screens/AuthScreens';
-import {Home, Settings} from './../screens/AppScreens';
+import {Home, Profile} from './../screens/AppScreens';
 
 //preconfigured tabs
 import {
@@ -61,12 +61,12 @@ const HomeStackScreen = () => {
   );
 };
 
-const SettingsStack = createStackNavigator();
-const SettingsStackScreen = () => {
+const ProfileStack = createStackNavigator();
+const ProfileStackScreen = () => {
   return (
-    <SettingsStack.Navigator>
-      <SettingsStack.Screen name="Settings" component={Settings} />
-    </SettingsStack.Navigator>
+    <ProfileStack.Navigator>
+      <ProfileStack.Screen name="Profile" component={Profile} />
+    </ProfileStack.Navigator>
   );
 };
 
@@ -77,7 +77,7 @@ const AppStackScreens = () => {
       screenOptions={BottomTabScreenOptions}
       tabBarOptions={BottomTabTabOptions}>
       <AppStack.Screen name="Home" component={HomeStackScreen} />
-      <AppStack.Screen name="Settings" component={SettingsStackScreen} />
+      <AppStack.Screen name="Profile" component={ProfileStackScreen} />
     </AppStack.Navigator>
   );
 };

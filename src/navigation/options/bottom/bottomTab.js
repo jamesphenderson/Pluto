@@ -6,7 +6,7 @@ export const BottomTabScreenOptions = ({route}) => ({
     let iconName;
     if (route.name === 'Home') {
       iconName = focused ? 'fire' : 'fire';
-    } else if (route.name === 'Settings') {
+    } else if (route.name === 'Profile') {
       iconName = focused ? 'face' : 'face';
     }
     return <Icon name={iconName} size={size} color={color} />;

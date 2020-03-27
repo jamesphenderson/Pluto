@@ -1,4 +1,4 @@
 import Home from './home';
-import Settings from './settings';
+import Profile from './profile';
 
-export {Home, Settings};
+export {Home, Profile};

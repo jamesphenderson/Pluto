@@ -19,15 +19,16 @@ export const HomeHeaderOptions = {
       {...props}
       name={'bell-ring-outline'}
       size={30}
-      color={'#444'}
+      color={'#333'}
+      badgeCount={10}
     />
   ),
   headerRight: props => (
     <HomeHeaderBar
       {...props}
-      name={'cloud-search-outline'}
+      name={'heart-multiple-outline'}
       size={30}
-      color={'#444'}
+      color={'#333'}
     />
   ),
   headerTransparent: true,

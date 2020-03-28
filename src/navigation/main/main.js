@@ -9,16 +9,15 @@ import {
   Login,
   Signup,
   ForgotPassword,
-} from './../screens/AuthScreens';
-import {Home, Search, Profile} from './../screens/AppScreens';
+} from './../../screens/AuthScreens';
+import {Home, Search, Profile} from './../../screens/AppScreens';
 
 //preconfigured tabs
 import {
   HomeHeaderOptions,
   BottomTabScreenOptions,
   BottomTabTabOptions,
-} from './options';
-import {create} from 'react-test-renderer';
+} from './../options';
 
 const AuthStack = createStackNavigator();
 const AuthStackScreens = () => {

@@ -3,16 +3,18 @@ import {View, StyleSheet, Text} from 'react-native';
 
 const Home = ({navigation}) => {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#fff',
-      }}>
+    <View style={styles.container}>
       <Text>Home</Text>
     </View>
   );
 };
 
 export default Home;
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: '#fff',
+    paddingTop: 60,
+    flex: 1,
+  },
+});

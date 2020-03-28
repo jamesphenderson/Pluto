@@ -1,8 +1,6 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
-
-//layout of home
-import Layout from './homeContent';
+import Layout from './homeUI';
 
 const Home = ({navigation}) => {
   return (

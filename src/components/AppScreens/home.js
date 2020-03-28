@@ -18,4 +18,7 @@ const styles = StyleSheet.create({
     paddingTop: 60,
     flex: 1,
   },
+  item: {
+    // width: wdp("75%")
+  },
 });

@@ -1,5 +1,5 @@
 import Home from './home';
-import Search from './search';
+import CreatePost from './createPost';
 import Profile from './profile';
 
-export {Home, Search, Profile};
+export {Home, CreatePost, Profile};

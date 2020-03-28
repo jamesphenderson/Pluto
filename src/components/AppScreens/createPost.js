@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, StyleSheet, Text} from 'react-native';
 
-const Search = ({navigation}) => {
+const CreatePost = ({navigation}) => {
   return (
     <View
       style={{
@@ -10,9 +10,9 @@ const Search = ({navigation}) => {
         alignItems: 'center',
         backgroundColor: '#fff',
       }}>
-      <Text>Search</Text>
+      <Text>Create Post</Text>
     </View>
   );
 };
 
-export default Search;
+export default CreatePost;

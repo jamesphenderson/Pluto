@@ -10,7 +10,7 @@ import {
   Signup,
   ForgotPassword,
 } from './../../screens/AuthScreens';
-import {Home, Search, Profile} from './../../screens/AppScreens';
+import {Home, CreatePost, Profile} from './../../screens/AppScreens';
 
 //preconfigured tabs
 import {
@@ -61,12 +61,12 @@ const HomeStackScreen = () => {
   );
 };
 
-const SearchStack = createStackNavigator();
-const SearchStackScreen = () => {
+const CreatePostStack = createStackNavigator();
+const CreatePostStackScreen = () => {
   return (
-    <SearchStack.Navigator>
-      <SearchStack.Screen name="Search" component={Search} />
-    </SearchStack.Navigator>
+    <CreatePostStack.Navigator>
+      <CreatePostStack.Screen name="CreatePost" component={CreatePost} />
+    </CreatePostStack.Navigator>
   );
 };
 
@@ -86,7 +86,7 @@ const AppStackScreens = () => {
       screenOptions={BottomTabScreenOptions}
       tabBarOptions={BottomTabTabOptions}>
       <AppStack.Screen name="Home" component={HomeStackScreen} />
-      <AppStack.Screen name="Search" component={SearchStackScreen} />
+      <AppStack.Screen name="CreatePost" component={CreatePostStackScreen} />
       <AppStack.Screen name="Profile" component={ProfileStackScreen} />
     </AppStack.Navigator>
   );

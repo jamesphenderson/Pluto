@@ -5,9 +5,9 @@ export const BottomTabScreenOptions = ({route}) => ({
   tabBarIcon: ({focused, color}) => {
     let iconName;
     if (route.name === 'Home') {
-      iconName = focused ? 'fire' : 'fire';
-    } else if (route.name === 'Search') {
-      iconName = focused ? 'magnify' : 'magnify';
+      iconName = focused ? 'home' : 'home';
+    } else if (route.name === 'CreatePost') {
+      iconName = focused ? 'bullhorn' : 'bullhorn';
     } else if (route.name === 'Profile') {
       iconName = focused ? 'face' : 'face';
     }

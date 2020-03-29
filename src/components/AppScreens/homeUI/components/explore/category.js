@@ -1,9 +1,9 @@
 import React from 'react';
 import {StyleSheet, View, Text, Image} from 'react-native';
 
-export default ({imgUri, title}) => {
+export default ({imgUri, title, color}) => {
   return (
-    <View style={styles.container}>
+    <View style={{...styles.container, backgroundColor: color ? color: "#fff"}}>
       <View style={styles.imgView}>
         <Image source={imgUri} style={styles.imgStyle} />
       </View>
@@ -19,8 +19,8 @@ const styles = StyleSheet.create({
     height: 120,
     width: 120,
     borderWidth: 0.5,
-    borderColor: '#555',
-    marginRight: 10,
+    borderColor: '#888',
+    marginRight: 10
   },
   imgView: {
     flex: 2,

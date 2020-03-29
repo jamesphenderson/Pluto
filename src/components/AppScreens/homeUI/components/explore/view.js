@@ -6,7 +6,7 @@ export default () => {
   return (
     <ScrollView scrollEventThrottle={16} style={styles.container} showsVerticalScrollIndicator={false}>
       <View style={styles.innerContainer}>
-        <Text style={styles.headerTxt}>Explore</Text>
+        <Text style={styles.headerTxt}>Explore topics</Text>
         <View style={styles.outerCategoryContainer}>
           <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
             <Category
@@ -54,6 +54,6 @@ const styles = StyleSheet.create({
   },
   outerCategoryContainer: {
     height: 130,
-    marginTop: 20,
+    marginTop: 18,
   },
 });

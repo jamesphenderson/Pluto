@@ -22,6 +22,10 @@ const styles = StyleSheet.create({
     borderWidth: 0.5,
     borderColor: '#888',
     marginRight: 10,
+    borderTopLeftRadius: 5,
+    borderTopRightRadius: 5,
+    borderBottomLeftRadius: 5,
+    borderBottomRightRadius: 5,
   },
   imgView: {
     flex: 2,

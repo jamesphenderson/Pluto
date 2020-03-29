@@ -4,7 +4,10 @@ import Category from './category';
 
 export default () => {
   return (
-    <ScrollView scrollEventThrottle={16} style={styles.container} showsVerticalScrollIndicator={false}>
+    <ScrollView
+      scrollEventThrottle={16}
+      style={styles.container}
+      showsVerticalScrollIndicator={false}>
       <View style={styles.innerContainer}>
         <Text style={styles.headerTxt}>Explore topics</Text>
         <View style={styles.outerCategoryContainer}>

@@ -1,15 +1,15 @@
 import React from 'react';
 import {StyleSheet, View, Text, Image} from 'react-native';
 
-export default ({imgUri, title, color}) => {
+export default ({avatarUri, displayName, color}) => {
   return (
     <View
       style={{...styles.container, backgroundColor: color ? color : '#fff'}}>
       <View style={styles.imgView}>
-        <Image source={imgUri} style={styles.imgStyle} />
+        <Image source={avatarUri} style={styles.imgStyle} />
       </View>
       <View style={styles.txtView}>
-        <Text>{title}</Text>
+        <Text>{displayName}</Text>
       </View>
     </View>
   );

@@ -1,14 +1,23 @@
 import React from 'react';
-import {View, StyleSheet} from 'react-native';
+import {StyleSheet, ScrollView} from 'react-native';
+import {useScrollToTop} from '@react-navigation/native';
 import {widthPercentageToDP as wdp} from 'react-native-responsive-screen';
-import {SearchBar, ExploreView} from './components';
+import {SearchBar, ExploreView, FeedView, FollowView} from './components';
 
+//change scrollview to flatlist? - RESEARCH
 export default () => {
+  const ref = React.useRef(null);
+  useScrollToTop(ref);
   return (
-    <View style={styles.container}>
+    <ScrollView
+      ref={ref}
+      style={styles.container}
+      showsVerticalScrollIndicator={false}>
       <SearchBar />
       <ExploreView />
-    </View>
+      <FeedView />
+      <FollowView />
+    </ScrollView>
   );
 };
 

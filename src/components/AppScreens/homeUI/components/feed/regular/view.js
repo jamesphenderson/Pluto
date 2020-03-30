@@ -1,7 +1,6 @@
 import React from 'react';
 import {StyleSheet, View, Text} from 'react-native';
 import RegularPost from './post';
-// import {fetchPosts} from './../../../../../../api';
 
 export default () => {
   return (
@@ -38,14 +37,7 @@ export default () => {
         />
         <RegularPost
           avatarUri={require('./../../../../../../../assets/img/music.png')}
-          displayName={'Daniel'}
-          timePosted={'2 hours ago'}
-          hasBeenLiked={false}
-          isPlaying={false}
-        />
-        <RegularPost
-          avatarUri={require('./../../../../../../../assets/img/music.png')}
-          displayName={'Boonk'}
+          displayName={'Wendy'}
           timePosted={'2 hours ago'}
           hasBeenLiked={false}
           isPlaying={false}

@@ -8,6 +8,7 @@ import {
   AnonymousFeedView,
   FollowView,
   RegularFeedView,
+  LoadMoreView,
 } from './components';
 
 //change scrollview to flatlist? - RESEARCH
@@ -24,6 +25,7 @@ export default () => {
       <AnonymousFeedView />
       <FollowView />
       <RegularFeedView />
+      <LoadMoreView />
     </ScrollView>
   );
 };

@@ -1,3 +1,3 @@
-import {MainAppNavigation} from './main';
+import {MainAppNavigation} from './screens';
 
 export {MainAppNavigation};

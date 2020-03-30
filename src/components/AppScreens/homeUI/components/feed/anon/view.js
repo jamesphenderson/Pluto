@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, View, Text} from 'react-native';
 import AnonymousPost from './post';
-import {fetchPosts} from './../../../../../api';
+// import {fetchPosts} from './../../../../../../api';
 
 export default () => {
   return (

@@ -1,3 +1,4 @@
-import FeedView from './view';
+import {AnonymousFeedView} from './anon';
+import {RegularFeedView} from './regular';
 
-export {FeedView};
+export {AnonymousFeedView, RegularFeedView};

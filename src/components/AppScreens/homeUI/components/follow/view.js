@@ -7,6 +7,7 @@ export default () => {
     <ScrollView
       scrollEventThrottle={16}
       style={styles.container}
+      showsHorizontalScrollIndicator={false}
       showsVerticalScrollIndicator={false}>
       <View style={styles.innerContainer}>
         <Text style={styles.headerTxt}>People you can follow</Text>
@@ -46,6 +47,7 @@ export default () => {
 const styles = StyleSheet.create({
   container: {
     paddingTop: 20,
+    paddingBottom: 10
   },
   innerContainer: {
     flex: 1,

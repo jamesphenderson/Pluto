@@ -22,8 +22,8 @@ export default ({avatarUri, displayName, color}) => {
 
 const styles = StyleSheet.create({
   container: {
-    height: 130,
-    width: 130,
+    height: 140,
+    width: 140,
     borderWidth: 0.5,
     borderColor: '#888',
     marginRight: 10,
@@ -35,11 +35,12 @@ const styles = StyleSheet.create({
   },
   imgView: {
     flex: 3,
+    alignItems: "center"
   },
   imgStyle: {
     flex: 1,
-    width: null,
-    height: null,
+    width: 100,
+    height: 100,
     resizeMode: 'cover',
   },
   displayNameView: {
@@ -49,6 +50,8 @@ const styles = StyleSheet.create({
   },
   followView: {
     alignItems: 'center',
+    paddingBottom: 2,
+    paddingTop: 2
   },
   followBtn: {
     backgroundColor: '#940a27',
@@ -56,6 +59,10 @@ const styles = StyleSheet.create({
     paddingRight: 10,
     paddingTop: 5,
     paddingBottom: 5,
+    borderTopLeftRadius: 3,
+    borderTopRightRadius: 3,
+    borderBottomLeftRadius: 3,
+    borderBottomRightRadius: 3,
   },
   followTxt: {
     color: '#fff',

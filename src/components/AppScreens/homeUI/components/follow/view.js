@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
   },
   outerUserCardContainer: {
-    height: 130,
-    marginTop: 18,
+    height: 150,
+    marginTop: 15,
   },
 });

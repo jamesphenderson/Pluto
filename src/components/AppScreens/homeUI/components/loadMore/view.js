@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#940a37',
   },
   btnText: {
-    fontSize: 18,
+    fontSize: 15,
     color: '#fff',
   },
 });

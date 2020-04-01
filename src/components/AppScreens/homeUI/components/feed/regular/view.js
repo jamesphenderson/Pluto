@@ -52,12 +52,12 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
   },
   container: {
-    marginTop: 20,
+    marginTop: 10,
   },
   headerTxt: {
     fontSize: 18,
     fontWeight: '700',
     paddingHorizontal: 10,
-    marginBottom: 15,
+    marginBottom: 10,
   },
 });

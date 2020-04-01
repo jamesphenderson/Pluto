@@ -47,7 +47,7 @@ export default () => {
 const styles = StyleSheet.create({
   container: {
     paddingTop: 20,
-    paddingBottom: 10
+    paddingBottom: 10,
   },
   innerContainer: {
     flex: 1,

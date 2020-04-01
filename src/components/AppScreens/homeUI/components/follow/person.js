@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
   },
   imgView: {
     flex: 3,
-    alignItems: "center"
+    alignItems: 'center',
   },
   imgStyle: {
     flex: 1,
@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
   followView: {
     alignItems: 'center',
     paddingBottom: 2,
-    paddingTop: 2
+    paddingTop: 2,
   },
   followBtn: {
     backgroundColor: '#940a27',

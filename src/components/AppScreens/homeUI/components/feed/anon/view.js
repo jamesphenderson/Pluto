@@ -25,7 +25,7 @@ export default () => {
 
 const styles = StyleSheet.create({
   cardContainer: {
-    flexDirection: 'row'
+    flexDirection: 'row',
   },
   container: {
     marginTop: 10,

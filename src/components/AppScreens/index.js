@@ -1,5 +1,3 @@
-import Home from './home';
-import CreatePost from './createPost';
-import Profile from './profile';
+import {Home, CreatePost, Profile} from "./screens"
 
 export {Home, CreatePost, Profile};

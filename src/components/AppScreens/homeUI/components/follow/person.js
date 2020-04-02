@@ -3,7 +3,8 @@ import {StyleSheet, View, Text, Image, TouchableOpacity} from 'react-native';
 
 export default ({avatarUri, displayName, color}) => {
   return (
-    <View
+    <TouchableOpacity
+      activeOpacity={0.6}
       style={{...styles.container, backgroundColor: color ? color : '#fff'}}>
       <View style={styles.imgView}>
         <Image source={avatarUri} style={styles.imgStyle} />
@@ -16,7 +17,7 @@ export default ({avatarUri, displayName, color}) => {
           <Text style={styles.followTxt}>Follow</Text>
         </TouchableOpacity>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 

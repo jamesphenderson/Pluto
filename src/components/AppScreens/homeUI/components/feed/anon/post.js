@@ -1,8 +1,11 @@
 import React from 'react';
-import {StyleSheet, View} from 'react-native';
+import {StyleSheet, TouchableOpacity} from 'react-native';
 
 export default ({reverseOrder}) => (
-  <View style={reverseOrder ? styles.card1 : styles.card2} />
+  <TouchableOpacity
+    activeOpacity={0.85}
+    style={reverseOrder ? styles.card1 : styles.card2}
+  />
 );
 
 const styles = StyleSheet.create({

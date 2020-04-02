@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, View, Text, Image} from 'react-native';
+import {StyleSheet, View, Text, Image, TouchableOpacity} from 'react-native';
 import MaterialIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 import SimpleLineIcon from 'react-native-vector-icons/SimpleLineIcons';
 import FontAwesomeIcon from 'react-native-vector-icons/FontAwesome';
@@ -11,8 +11,8 @@ export default ({
   hasBeenLiked,
   isPlaying,
 }) => (
-  <View style={styles.card}>
-    <View style={styles.leftCard}>
+  <TouchableOpacity activeOpacity={0.6} style={styles.card}>
+    <TouchableOpacity activeOpacity={0.6} style={styles.leftCard}>
       <View style={styles.avatarView}>
         <Image source={avatarUri} style={styles.avatarImg} />
       </View>
@@ -20,32 +20,36 @@ export default ({
         <Text style={styles.displayName}>{displayName}</Text>
         <Text>{timePosted}</Text>
       </View>
-    </View>
+    </TouchableOpacity>
     <View style={styles.rightCard}>
       <View style={styles.iconView}>
-        {hasBeenLiked ? (
-          <MaterialIcon
-            name={'heart-multiple'}
-            size={25}
-            color={'#000'}
-            style={styles.leftMostIcon}
-          />
-        ) : (
-          <MaterialIcon
-            name={'heart-multiple-outline'}
-            size={25}
-            color={'#000'}
-            style={styles.leftMostIcon}
-          />
-        )}
-        {isPlaying ? (
-          <FontAwesomeIcon name={'pause'} size={23} color={'#000'} />
-        ) : (
-          <SimpleLineIcon name={'control-play'} size={23} color={'#000'} />
-        )}
+        <TouchableOpacity activeOpacity={0.4}>
+          {hasBeenLiked ? (
+            <MaterialIcon
+              name={'heart-multiple'}
+              size={25}
+              color={'#000'}
+              style={styles.leftMostIcon}
+            />
+          ) : (
+            <MaterialIcon
+              name={'heart-multiple-outline'}
+              size={25}
+              color={'#000'}
+              style={styles.leftMostIcon}
+            />
+          )}
+        </TouchableOpacity>
+        <TouchableOpacity activeOpacity={0.4}>
+          {isPlaying ? (
+            <FontAwesomeIcon name={'pause'} size={23} color={'#000'} />
+          ) : (
+            <SimpleLineIcon name={'control-play'} size={23} color={'#000'} />
+          )}
+        </TouchableOpacity>
       </View>
     </View>
-  </View>
+  </TouchableOpacity>
 );
 
 const styles = StyleSheet.create({
@@ -61,6 +65,7 @@ const styles = StyleSheet.create({
     borderBottomLeftRadius: 5,
     borderBottomRightRadius: 5,
     borderTopWidth: 0.2,
+    borderColor: '#333',
   },
   leftCard: {
     flexDirection: 'row',

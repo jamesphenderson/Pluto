@@ -1,9 +1,10 @@
 import React from 'react';
-import {StyleSheet, View, Text, Image} from 'react-native';
+import {StyleSheet, View, Text, Image, TouchableOpacity} from 'react-native';
 
 export default ({imgUri, title, color}) => {
   return (
-    <View
+    <TouchableOpacity
+      activeOpacity={0.6}
       style={{...styles.container, backgroundColor: color ? color : '#fff'}}>
       <View style={styles.imgView}>
         <Image source={imgUri} style={styles.imgStyle} />
@@ -11,7 +12,7 @@ export default ({imgUri, title, color}) => {
       <View style={styles.txtView}>
         <Text>{title}</Text>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 

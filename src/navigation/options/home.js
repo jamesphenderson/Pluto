@@ -20,7 +20,7 @@ export const HomeHeaderOptions = {
       name={'bell-ring-outline'}
       size={30}
       color={'#333'}
-      badgeCount={10}
+      badgeCount={25}
     />
   ),
   headerRight: props => (

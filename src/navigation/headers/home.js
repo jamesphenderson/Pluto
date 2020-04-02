@@ -21,19 +21,19 @@ export const HomeHeaderBar = ({name, size, color, badgeCount}) => {
 
 const styles = StyleSheet.create({
   container: {
-    position: 'absolute',
-    backgroundColor: 'red',
     justifyContent: 'center',
     alignItems: 'center',
-    width: 16,
-    height: 16,
-    borderRadius: 8,
-    top: -3,
+    backgroundColor: 'red',
+    position: 'absolute',
+    borderRadius: 10,
+    height: 20,
+    width: 20,
     right: -13,
+    top: -3,
   },
   badgeText: {
+    fontWeight: 'bold',
     color: 'white',
     fontSize: 10,
-    fontWeight: 'bold',
   },
 });

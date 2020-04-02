@@ -1,5 +1,11 @@
 import React from 'react';
-import {StyleSheet, View, Text, ScrollView} from 'react-native';
+import {
+  StyleSheet,
+  View,
+  Text,
+  ScrollView,
+  TouchableOpacity,
+} from 'react-native';
 import Category from './category';
 
 export default () => {
@@ -9,7 +15,12 @@ export default () => {
       style={styles.container}
       showsVerticalScrollIndicator={false}>
       <View style={styles.innerContainer}>
-        <Text style={styles.headerTxt}>Explore topics</Text>
+        <View style={styles.exploreHeaders}>
+          <Text style={styles.headerLeftTxt}>Explore topics</Text>
+          <TouchableOpacity style={styles.headerRightView}>
+            <Text style={styles.headerRightText}>more ></Text>
+          </TouchableOpacity>
+        </View>
         <View style={styles.outerCategoryContainer}>
           <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
             <Category
@@ -50,10 +61,21 @@ const styles = StyleSheet.create({
   innerContainer: {
     flex: 1,
   },
-  headerTxt: {
+  exploreHeaders: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  headerLeftTxt: {
     fontSize: 18,
     fontWeight: '700',
     paddingHorizontal: 10,
+  },
+  headerRightView: {
+    justifyContent: 'center',
+    marginRight: 13,
+  },
+  headerRightText: {
+    textDecorationLine: 'underline',
   },
   outerCategoryContainer: {
     height: 130,

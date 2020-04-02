@@ -5,7 +5,7 @@ import RegularPost from './post';
 export default () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.headerTxt}>In case you missed</Text>
+      <Text style={styles.headerTxt}>Voices you missed</Text>
       <View style={styles.cardContainer}>
         <RegularPost
           avatarUri={require('./../../../../../../../assets/img/music.png')}

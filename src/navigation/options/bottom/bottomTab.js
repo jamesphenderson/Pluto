@@ -11,7 +11,7 @@ export const BottomTabScreenOptions = ({route}) => ({
     } else if (route.name === 'Profile') {
       iconName = focused ? 'face' : 'face';
     }
-    return <Icon name={iconName} size={35} color={color} />;
+    return <Icon name={iconName} size={33} color={color} />;
   },
 });
 

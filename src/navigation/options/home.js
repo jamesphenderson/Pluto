@@ -17,17 +17,17 @@ export const HomeHeaderOptions = {
   headerLeft: props => (
     <HomeHeaderBar
       {...props}
-      name={'bell-ring-outline'}
+      name={'bell-outline'}
       size={30}
       color={'#333'}
-      badgeCount={25}
+      badgeCount={5}
     />
   ),
   headerRight: props => (
     <HomeHeaderBar
       {...props}
       name={'heart-multiple-outline'}
-      size={30}
+      size={28}
       color={'#333'}
     />
   ),

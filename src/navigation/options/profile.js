@@ -17,7 +17,7 @@ export const ProfileHeaderOptions = {
   headerLeft: props => (
     <ProfileHeaderBar
       {...props}
-      name={'account-multiple-outline'}
+      name={'eye-outline'}
       size={31}
       color={'#333'}
       badgeCount={true}

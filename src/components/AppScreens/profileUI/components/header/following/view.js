@@ -17,6 +17,9 @@ const styles = StyleSheet.create({
     fontSize: 22,
     color: '#2f2e41',
     paddingBottom: 2,
+    color: '#801336',
   },
-  followingText: {},
+  followingText: {
+    fontWeight: 'bold',
+  },
 });

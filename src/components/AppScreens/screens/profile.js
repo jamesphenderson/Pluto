@@ -1,18 +1,24 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {StyleSheet, View} from 'react-native';
+import Layout from './../profileUI';
 
 const Profile = ({navigation}) => {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#fff',
-      }}>
-      <Text>Profile</Text>
+    <View style={styles.container}>
+      <Layout />
     </View>
   );
 };
 
 export default Profile;
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: '#fff',
+    paddingTop: 60,
+    flex: 1,
+  },
+  item: {
+    // width: wdp("75%")
+  },
+});

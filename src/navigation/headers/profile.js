@@ -4,12 +4,9 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 export const ProfileHeaderBar = ({name, size, color, badgeCount}) => {
   return (
-    <View style={{width:30, height: 30, margin: 5,}}>
+    <View style={{width: 30, height: 30, margin: 5}}>
       <Icon name={name} size={size} color={color} />
-      {badgeCount && (
-        <View style={styles.containerDot}>
-        </View>
-      )}
+      {badgeCount && <View style={styles.containerDot} />}
     </View>
   );
 };
@@ -24,7 +21,7 @@ const styles = StyleSheet.create({
     height: 10,
     width: 10,
     right: -6,
-    top: 0
+    top: 0,
   },
   badgeText: {
     fontWeight: 'bold',

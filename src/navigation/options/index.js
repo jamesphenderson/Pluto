@@ -1,4 +1,5 @@
 import {HomeHeaderOptions} from './home';
+import {ProfileHeaderOptions} from "./profile"
 import {BottomTabScreenOptions, BottomTabTabOptions} from './bottom';
 
-export {HomeHeaderOptions, BottomTabScreenOptions, BottomTabTabOptions};
+export {HomeHeaderOptions, ProfileHeaderOptions, BottomTabScreenOptions, BottomTabTabOptions};

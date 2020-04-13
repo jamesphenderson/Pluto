@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, View, TouchableOpacity, Text} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import {heightPercentageToDP as hdp} from 'react-native-responsive-screen';
 import {AnonCardView} from './anon';
 import {RegularCardView} from './regular';

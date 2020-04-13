@@ -1,4 +1,5 @@
 import {HomeHeaderBar} from './home';
+import {CreatePostHeaderBar} from './createPost';
 import {ProfileHeaderBar} from './profile';
 
-export {HomeHeaderBar, ProfileHeaderBar};
+export {HomeHeaderBar, CreatePostHeaderBar, ProfileHeaderBar};

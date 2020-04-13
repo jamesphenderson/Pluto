@@ -16,14 +16,7 @@ export default () => {
         />
         <RegularPost
           avatarUri={require('./../../../../../../../assets/img/music.png')}
-          displayName={'Diana'}
-          timePosted={'2 hours ago'}
-          hasBeenLiked={true}
-          isPlaying={false}
-        />
-        <RegularPost
-          avatarUri={require('./../../../../../../../assets/img/music.png')}
-          displayName={'Willis'}
+          displayName={'Morty'}
           timePosted={'2 hours ago'}
           hasBeenLiked={false}
           isPlaying={false}
@@ -32,12 +25,19 @@ export default () => {
           avatarUri={require('./../../../../../../../assets/img/music.png')}
           displayName={'Kevin'}
           timePosted={'2 hours ago'}
+          hasBeenLiked={true}
+          isPlaying={false}
+        />
+        <RegularPost
+          avatarUri={require('./../../../../../../../assets/img/music.png')}
+          displayName={'Joy'}
+          timePosted={'2 hours ago'}
           hasBeenLiked={false}
           isPlaying={false}
         />
         <RegularPost
           avatarUri={require('./../../../../../../../assets/img/music.png')}
-          displayName={'Wendy'}
+          displayName={'Ricky'}
           timePosted={'2 hours ago'}
           hasBeenLiked={false}
           isPlaying={false}

@@ -16,7 +16,7 @@ export default () => {
       showsVerticalScrollIndicator={false}>
       <View style={styles.innerContainer}>
         <View style={styles.exploreHeaders}>
-          <Text style={styles.headerLeftTxt}>Explore topics</Text>
+          <Text style={styles.headerLeftTxt}>Explore trends</Text>
           <TouchableOpacity style={styles.headerRightView}>
             <Text style={styles.headerRightText}>more ></Text>
           </TouchableOpacity>

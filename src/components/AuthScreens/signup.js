@@ -90,6 +90,7 @@ const styles = StyleSheet.create({
   },
   button: {
     marginBottom: 5,
+    backgroundColor: '#fb6251',
   },
   checkbox: {
     marginTop: 5,

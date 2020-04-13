@@ -10,7 +10,7 @@ export default () => (
 
 const styles = StyleSheet.create({
   editProfileBtn: {
-    backgroundColor: '#940a37',
+    backgroundColor: '#fb6251',
     marginTop: 10,
   },
   editProfileBtnText: {

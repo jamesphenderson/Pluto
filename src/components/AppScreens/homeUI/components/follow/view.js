@@ -30,7 +30,11 @@ export default () => {
             />
             <UserCard
               avatarUri={require('./../../../../../../assets/img/music.png')}
-              displayName={'Wendy'}
+              displayName={'Joy'}
+            />
+            <UserCard
+              avatarUri={require('./../../../../../../assets/img/music.png')}
+              displayName={'Drake'}
             />
             <UserCard
               avatarUri={require('./../../../../../../assets/img/music.png')}
@@ -38,15 +42,11 @@ export default () => {
             />
             <UserCard
               avatarUri={require('./../../../../../../assets/img/music.png')}
-              displayName={'Nimu'}
+              displayName={'Wendy'}
             />
             <UserCard
               avatarUri={require('./../../../../../../assets/img/music.png')}
-              displayName={'Joy'}
-            />
-            <UserCard
-              avatarUri={require('./../../../../../../assets/img/music.png')}
-              displayName={'Drake'}
+              displayName={'Jane'}
             />
           </ScrollView>
         </View>

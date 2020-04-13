@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     paddingTop: 2,
   },
   followBtn: {
-    backgroundColor: '#940a27',
+    backgroundColor: '#fb6251',
     paddingLeft: 10,
     paddingRight: 10,
     paddingTop: 5,

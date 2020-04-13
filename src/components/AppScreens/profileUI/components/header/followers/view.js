@@ -15,11 +15,11 @@ const styles = StyleSheet.create({
   followerFigure: {
     fontWeight: 'bold',
     fontSize: 22,
-    color: '#2f2e41',
     paddingBottom: 2,
-    color: '#801336',
+    color: '#fb6251',
   },
   followerText: {
     fontWeight: 'bold',
+    color: '#333',
   },
 });

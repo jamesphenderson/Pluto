@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   btn: {
-    backgroundColor: '#940a37',
+    backgroundColor: '#fb6251',
   },
   btnText: {
     fontSize: 15,

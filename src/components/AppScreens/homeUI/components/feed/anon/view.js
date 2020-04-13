@@ -8,16 +8,16 @@ export default () => {
     <View style={styles.container}>
       <Text style={styles.headerTxt}>Anonymous sounds</Text>
       <View style={styles.cardContainer}>
-        <AnonymousPost reverseOrder={true} />
-        <AnonymousPost reverseOrder={false} />
+        <AnonymousPost reverseOrder={true} isPlaying={false} />
+        <AnonymousPost reverseOrder={false} isPlaying={false} />
       </View>
       <View style={styles.cardContainer}>
-        <AnonymousPost reverseOrder={false} />
-        <AnonymousPost reverseOrder={true} />
+        <AnonymousPost reverseOrder={false} isPlaying={true} />
+        <AnonymousPost reverseOrder={true} isPlaying={false} />
       </View>
       <View style={styles.cardContainer}>
-        <AnonymousPost reverseOrder={true} />
-        <AnonymousPost reverseOrder={false} />
+        <AnonymousPost reverseOrder={true} isPlaying={false} />
+        <AnonymousPost reverseOrder={false} isPlaying={false} />
       </View>
     </View>
   );

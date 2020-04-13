@@ -28,7 +28,7 @@ export default ({
             <MaterialIcon
               name={'heart-multiple'}
               size={25}
-              color={'#941304'}
+              color={'#fb6251'}
               style={styles.leftMostIcon}
             />
           ) : (
@@ -42,7 +42,7 @@ export default ({
         </TouchableOpacity>
         <TouchableOpacity activeOpacity={0.4}>
           {isPlaying ? (
-            <FontAwesomeIcon name={'pause'} size={23} color={'#941304'} />
+            <FontAwesomeIcon name={'pause'} size={23} color={'#fb6251'} />
           ) : (
             <SimpleLineIcon name={'control-play'} size={23} color={'#000'} />
           )}

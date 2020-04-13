@@ -30,6 +30,7 @@ const Login = ({navigation}) => {
           <Input placeholder="Password" secureTextEntry={true} />
         </Item>
         <Button
+          activeOpacity={0.5}
           style={styles.button}
           block
           onPress={() => {
@@ -39,6 +40,7 @@ const Login = ({navigation}) => {
           <Text>Sign In</Text>
         </Button>
         <Button
+          activeOpacity={0.5}
           style={styles.button}
           block
           onPress={() => navigation.navigate('Signup')}>

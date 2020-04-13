@@ -52,6 +52,7 @@ const Signup = ({navigation}) => {
           </Body>
         </ListItem>
         <Button
+          activeOpacity={0.5}
           style={styles.button}
           block
           onPress={() => {
@@ -61,6 +62,7 @@ const Signup = ({navigation}) => {
           <Text>Create Account</Text>
         </Button>
         <Button
+          activeOpacity={0.5}
           style={styles.button}
           block
           onPress={() => navigation.navigate('Login')}>

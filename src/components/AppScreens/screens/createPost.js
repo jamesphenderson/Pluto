@@ -1,5 +1,6 @@
 import React from 'react';
 import {View, StyleSheet, Text} from 'react-native';
+import LottieView from 'lottie-react-native';
 
 const CreatePost = ({navigation}) => {
   return (
@@ -10,6 +11,7 @@ const CreatePost = ({navigation}) => {
         alignItems: 'center',
         backgroundColor: '#fff',
       }}>
+        <LottieView source={require('./../../../../assets/animations/mic.json')} autoPlay loop />
       <Text>Create Post</Text>
     </View>
   );

@@ -22,7 +22,7 @@ const Signup = ({navigation}) => {
   const dispatch = useDispatch();
   return (
     <Container style={styles.container}>
-      <Content>
+      <Content contentContainerStyle={styles.content}>
         <View style={styles.imageContainer}>
           <Image
             source={require('./../../../assets/img/music.png')}
@@ -78,6 +78,10 @@ export default Signup;
 const styles = StyleSheet.create({
   container: {
     padding: wdp('5%'),
+  },
+  content: {
+    justifyContent: 'center',
+    flex: 1,
   },
   imageContainer: {
     justifyContent: 'center',

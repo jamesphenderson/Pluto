@@ -2,7 +2,7 @@ import React from 'react';
 import {StyleSheet, ScrollView} from 'react-native';
 import {useScrollToTop} from '@react-navigation/native';
 import {widthPercentageToDP as wdp} from 'react-native-responsive-screen';
-import {HeaderView} from './components';
+import {HeaderView, PostsView} from './components';
 
 //change scrollview to flatlist? - RESEARCH
 export default () => {
@@ -15,6 +15,7 @@ export default () => {
       showsVerticalScrollIndicator={false}
       showsHorizontalScrollIndicator={false}>
       <HeaderView />
+      <PostsView />
     </ScrollView>
   );
 };

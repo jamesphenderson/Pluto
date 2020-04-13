@@ -9,7 +9,7 @@ export default ({reverseOrder, isPlaying}) => (
     <Icon
       name={isPlaying ? 'pause' : 'play'}
       size={40}
-      color={reverseOrder ? '#333' : '#f3f3f3'}
+      color={reverseOrder ? '#fb786a' : '#fca59c'}
     />
   </TouchableOpacity>
 );

@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
   },
   imgView: {
     flex: 2,
+    marginTop: 10,
   },
   imgStyle: {
     flex: 1,
@@ -38,7 +39,7 @@ const styles = StyleSheet.create({
     resizeMode: 'cover',
   },
   txtView: {
-    flex: 1,
     alignItems: 'center',
+    paddingBottom: 13,
   },
 });

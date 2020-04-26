@@ -37,6 +37,7 @@ class CreatePost extends Component {
               this.animation = animation;
             }}
             style={{height: 250, width: 250}}
+            autoPlay={false}
           />
         </TouchableOpacity>
       </View>
